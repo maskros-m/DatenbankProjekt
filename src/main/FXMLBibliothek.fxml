@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="415.0" prefWidth="622.0" styleClass="anchor" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.FXMLBibliothekController">
+    <stylesheets>
+        <URL value="@bibliothek.css" />
+    </stylesheets>
+    <children>
+        <Button fx:id="borrowBtn" layoutX="97.0" layoutY="304.0" onAction="#openBorrowPane" prefHeight="36.0" prefWidth="164.0" style="-fx-background-radius: 4px;" text="Buch ausleihen" textFill="WHITE">
+         <font>
+            <Font name="Californian FB Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="returnBtn" layoutX="337.0" layoutY="304.0" onAction="#openReturnPane" prefHeight="36.0" prefWidth="164.0" style="-fx-background-radius: 4px;" text="Buch zurückgeben" textFill="WHITE">
+         <font>
+            <Font name="Californian FB Bold" size="14.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

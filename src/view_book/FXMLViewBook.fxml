@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="457.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view_book.FXMLViewBookController">
+    <stylesheets>
+        <URL value="@fxmlviewbook.css" />
+    </stylesheets>
+   <children>
+      <ImageView id="imgContainer" fx:id="imgBookCover" fitHeight="150.0" fitWidth="129.0" layoutX="92.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true" styleClass="mainFxmlClass" />
+      <Label layoutX="243.0" layoutY="28.0" text="Titel">
+         <font>
+            <Font name="Californian FB" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblBookTitle" layoutX="295.0" layoutY="28.0" text="Label">
+         <font>
+            <Font name="Californian FB Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="243.0" layoutY="88.0" text="Autor(en):">
+         <font>
+            <Font name="Californian FB" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAuthors" layoutX="346.0" layoutY="88.0" text="Label">
+         <font>
+            <Font name="Californian FB" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="243.0" layoutY="109.0" text="Erscheinungsjahr:">
+         <font>
+            <Font name="Californian FB" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblYear" layoutX="346.0" layoutY="108.0" text="Label">
+         <font>
+            <Font name="Californian FB" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="243.0" layoutY="129.0" text="Auflage:">
+         <font>
+            <Font name="Californian FB" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblEdition" layoutX="346.0" layoutY="129.0" text="Label">
+         <font>
+            <Font name="Californian FB" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="243.0" layoutY="148.0" text="Verlag:">
+         <font>
+            <Font name="Californian FB" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPublisher" layoutX="346.0" layoutY="148.0" text="Label">
+         <font>
+            <Font name="Californian FB" size="13.0" />
+         </font>
+      </Label>
+      <TableView id="tbvLendingDetails" fx:id="tbvLendingDetails" layoutX="36.0" layoutY="191.0" prefHeight="180.0" prefWidth="528.0">
+        <columns>
+          <TableColumn fx:id="colCopyCode" prefWidth="98.66665649414062" text="Exemplarcode" />
+          <TableColumn fx:id="colLendDate" prefWidth="120.33334350585938" text="Ausleihdatum" />
+            <TableColumn fx:id="colReturnDate" prefWidth="126.0" text="Abgabefrist" />
+            <TableColumn fx:id="colRenewal" prefWidth="87.66668701171875" text="Erneuerung" />
+            <TableColumn fx:id="colAvailability" prefWidth="95.33331298828125" text="Verfügbarkeit" />
+        </columns>
+      </TableView>
+
+      <Button fx:id="btnBorrow" disable="true" layoutX="285.0" layoutY="391.0" mnemonicParsing="false" onAction="#borrowBook" prefHeight="38.0" prefWidth="136.0" style="-fx-background-color: #9FE2BF; -fx-font-weight: bold; -fx-background-radius: 7px;" text="Buch ausleihen" textFill="WHITE">
+         <font>
+            <Font name="Californian FB Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnReserve" disable="true" layoutX="438.0" layoutY="391.0" mnemonicParsing="false" onAction="#reserveBook" prefHeight="38.0" prefWidth="111.0" style="-fx-background-color: #e8e8e8; -fx-background-radius: 7px;" text="Buch reservieren">
+         <font>
+            <Font name="Californian FB" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+   </children>
+</AnchorPane>

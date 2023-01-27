@@ -1,0 +1,48 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+.table-view {
+    -fx-font-family: "Californian FB", "Book Antiqua";
+    -fx-font-size: 12.5px;
+}
+.table-view .column-header-background .label{
+/*    -fx-background-color: transparent; */
+    -fx-font-weight:bold;
+    -fx-font-size: 13px;
+    -fx-text-fill: #111111;
+}
+
+.combo-box {
+    -fx-font-family: "Californian FB", "Book Antiqua";
+    -fx-font-size: 12px;
+    -fx-background-insets: 0px;
+    -fx-faint-focus-color: transparent;
+    -fx-background-color: #fff;
+    -fx-control-inner-background: #fff;
+}
+
+.combo-box:focus {
+    -fx-background-insets: 0;
+    -fx-background-color: transparent, white, transparent, white;
+/*    -fx-background-radius: 0, 0, 0, 0;*/
+
+    -fx-focus-color: -fx-control-inner-background;
+    -fx-faint-focus-color: -fx-control-inner-background;
+    -fx-text-box-border: -fx-control-inner-background;
+    -fx-border-width: -1;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: transparent;
+}
+
+.button {
+    -fx-font-family: "Californian FB", "Book Antiqua";
+    -fx-font-weight: bold;
+    -fx-font-size: 13.5px;
+}
