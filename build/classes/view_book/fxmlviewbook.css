@@ -1,0 +1,27 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+}
+
+.table-view {
+    -fx-font-family: "Californian FB";
+    -fx-font-size: 13px;
+}
+.table-view .column-header-background .label{
+/*    -fx-background-color: transparent; */
+    -fx-font-weight:bold;
+    -fx-font-size: 14px;
+    -fx-text-fill: #111111;
+}
+
+#tbvLendingDetails .table-column {
+    -fx-alignment: center;
+}
+
+.button {
+    -fx-font-family: "Californian FB";
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}

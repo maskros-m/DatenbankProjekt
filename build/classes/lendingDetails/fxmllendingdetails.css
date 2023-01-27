@@ -1,0 +1,23 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+.date-picker {
+    -fx-font-family: "Californian FB", "Book Antiqua";
+    -fx-font-size: 12px;
+}
+
+.date-cell:focused, .date-cell:hover {
+  -fx-background-color: #c9f5d9;
+  -fx-font-color: #111111;
+}
+
+.button {
+    -fx-font-family: "Californian FB", "Book Antiqua";
+    -fx-font-size: 13px;
+    -fx-cursor: hand;
+}

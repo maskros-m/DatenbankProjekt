@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="501.0" prefWidth="600.0" style="-fx-background-color: #f6f6f6;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lending.FXMLLendingController">
+    <stylesheets>
+        <URL value="@fxmllending.css" />
+    </stylesheets>
+   <children>
+      <Pane fx:id="advSearchField" layoutX="40.0" layoutY="60.0" prefHeight="133.0" prefWidth="528.0" style="-fx-border-style: dashed; -fx-border-color: #cecece;">
+         <children>
+            <Label layoutX="19.0" layoutY="10.0" prefHeight="17.0" prefWidth="60.0" text="Titel">
+               <font>
+                  <Font name="Californian FB" size="13.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="comboBookGenre" layoutX="206.0" layoutY="29.0" prefHeight="30.0" prefWidth="142.0" style="-fx-background-color: #ffffff;" />
+            <Label layoutX="224.0" layoutY="10.0" text="Genre">
+               <font>
+                  <Font name="Californian FB" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="19.0" layoutY="67.0" text="Autor">
+               <font>
+                  <Font name="Californian FB" size="13.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="comboAuthor" layoutX="10.0" layoutY="86.0" prefHeight="30.0" prefWidth="149.0" style="-fx-background-color: #ffffff;" />
+            <ComboBox fx:id="comboPublisher" layoutX="206.0" layoutY="86.0" prefHeight="30.0" prefWidth="142.0" style="-fx-background-color: #ffffff;" />
+            <Label layoutX="224.0" layoutY="67.0" text="Verlag">
+               <font>
+                  <Font name="Californian FB" size="13.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnBookSearch" layoutX="382.0" layoutY="29.0" mnemonicParsing="false" onAction="#searchBook" prefHeight="30.0" prefWidth="115.0" style="-fx-background-color: #9FE2BF; -fx-background-radius: 8px;" text="Suchen" textFill="WHITE">
+               <font>
+                  <Font name="Californian FB Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <TextField fx:id="txtTitleSearch" layoutX="10.0" layoutY="30.0" prefHeight="30.0" prefWidth="149.0" promptText="Titel eingeben..." style="-fx-background-color: #fff;">
+               <font>
+                  <Font name="Californian FB" size="13.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+      <Label layoutX="56.0" layoutY="31.0" text="Bücher suchen">
+         <font>
+            <Font name="Californian FB Bold" size="22.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tbvBookSearch" layoutX="40.0" layoutY="207.0" prefHeight="211.0" prefWidth="528.0" stylesheets="@fxmllending.css">
+        <columns>
+          <TableColumn fx:id="colBookTitle" prefWidth="314.6666259765625" text="Titel" />
+          <TableColumn fx:id="colAuthors" minWidth="0.0" prefWidth="133.3333740234375" text="Autor(en)" />
+            <TableColumn fx:id="colCopies" prefWidth="65.66668701171875" text="Anzahl" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnViewBook" disable="true" layoutX="319.0" layoutY="441.0" mnemonicParsing="false" onAction="#viewBookDetails" prefHeight="30.0" prefWidth="131.0" style="-fx-background-color: #9FE2BF; -fx-background-radius: 8px;" text="Buchdetails" textFill="WHITE">
+         <font>
+            <Font name="Californian FB Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnBack" layoutX="473.0" layoutY="441.0" mnemonicParsing="false" onAction="#backToHomepage" prefHeight="30.0" prefWidth="84.0" style="-fx-background-color: #ebebeb; -fx-background-radius: 8px;" text="Zurück">
+         <font>
+            <Font name="Californian FB Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ComboBox fx:id="comboBookTitles" layoutX="349.0" layoutY="17.0" prefHeight="30.0" prefWidth="177.0" style="-fx-background-color: #ffffff;" visible="false" />
+   </children>
+</AnchorPane>
