@@ -1,7 +1,8 @@
 # DatenbankProjekt in Java
 ### Über das Projekt
 Das Projekt wurde in Java mit NetBeans und ScreenBuilder geschrieben.
-Fürs Laufen benötigt das Projekt Java JDK 1.8.0_231 und die JAR Datei (mysql-connector-java-5.0.8-bin.jar), die unter Libraries angelegt werden sollte. Außerdem verbindet das Programm mit einer SQL Datenbank, um die Datei in library.sql (unter dieses Verzeichnis) zu nutzen. Dafür habe ich Xampp und localhost/myphpadmin benutzt.
+Fürs Laufen benötigt das Projekt Java JDK 1.8.0_231 und die JAR Datei (mysql-connector-java-5.0.8-bin.jar), die unter Libraries angelegt werden sollte. Außerdem sollte das Programm mit einer SQL Datenbank verbinden lässen, um die Datei in library.sql (unter dieses Verzeichnis) zu nutzen. Dafür habe ich Xampp und localhost/myphpadmin benutzt.
+Für das Projekt habe ich Bibliothek II ausgewählt.
 ### Aufgabenstellung:
 > Cocktails
 
